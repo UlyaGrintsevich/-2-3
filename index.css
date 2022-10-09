@@ -13,7 +13,7 @@ body {
   vertical-align: middle;
 }
 
-section {
+.section1 {
     width: 1170px;
     height: 665px;
     margin-left: 171px;
@@ -55,7 +55,8 @@ article {
     height: 383px;
     display: inline-block;
     margin-top: 71px;
-    /* margin-right: 31px; когда я пишу это, то оно и для последней колонки применяется и она съезжает вниз, помоги пожалуйста найти ошибку! */
+    /* margin-right: 31px;  когда я пишу это, то оно и для последней колонки применяется и она съезжает вниз, помоги пожалуйста найти ошибку!*/
+
 }
 
 
@@ -80,6 +81,7 @@ article {
     font-size: 18px;
     text-align: center;
     font-weight: 400;
+    margin: auto;
 }
 
 img {

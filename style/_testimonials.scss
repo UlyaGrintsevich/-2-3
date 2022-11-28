@@ -1,0 +1,123 @@
+.testimonials-container {
+    @include Flex();
+    width: 100%;
+    height: 535px;
+    font-family: 'Raleway' , sans-serif;
+    .background {
+        background-color: #5C3249;
+        height: 490px;
+    }
+    .left-side {
+        position: absolute;
+        margin-right: 770px;
+    }
+
+    h2 {
+        @include Flex();
+        height: 230px;
+        line-height: 48.74px;
+        font-weight: 400;
+        font-size: 36px;
+        margin: 116px 170px 0px 870px;
+        width: 471px;
+        font-family: 'Cardo', sans-serif;
+        color: $white;
+        text-transform: capitalize;
+    }
+
+    h6 {
+        text-transform: $uppercase;
+        line-height: 15.26px;
+        height: 28px;
+        font-weight: 700;
+        font-size: 13px;
+        margin: 0px 170px 116px 871px;
+        width: 470px;
+        color: $white;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .testimonials-container {
+        width: 100%;
+        height: 332.07px;
+
+        .background {
+            background-color: #5C3249;
+            height: 332.07px;
+            display: block; 
+        }
+
+        .left-side {
+            position: absolute;
+            margin-right: 522px;
+        }
+
+        h2 {
+            height: 156px;
+            line-height: 32.5px;
+            font-size: 24px;
+            margin: 47px 104px 0px 590px;
+            width: 330px;
+        }
+
+        h6 {
+            line-height: 14.09px;
+            height: 19px;
+            font-size: 12px;
+            margin: 0px 104px 110.07px 590px;
+            width: 330px;
+        }
+
+        img[alt="background"] {
+            width: 502px;
+            height: 332px;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .testimonials-container {
+        width: 320px;
+        height: 538px;
+        @include FlexColumn();
+        margin: 0 auto;
+
+        .background {
+            background-color: #5C3249;
+            height: 538px;
+            width: 320px;
+        }
+
+        .left-side {
+            position: absolute;
+            margin-bottom: 212px;
+        }
+
+        h2 {
+            height: 206px;
+            line-height: 32.5px;
+            font-size: 24px;
+            margin: 212px 25px 0px 20px;
+            width: 275px;
+            text-align: $center;
+            text-transform: capitalize;
+        }
+
+        h6 {
+            line-height: 14.09px;
+            height: 25px;
+            font-size: 12px;
+            margin: 0px 25px 95px 20px;
+            width: 275px;
+            text-transform: $uppercase;
+        }
+
+        img[alt="background"] {
+            width: 320px;
+            height: 212px;
+        }
+    }
+}

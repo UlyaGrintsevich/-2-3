@@ -1,0 +1,38 @@
+@mixin FeaturesTitle {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 72px;
+    text-align: center;
+    margin-bottom: 20.43px;
+    color: #2D3033;
+    font-family:'Raleway' , sans-serif;
+    text-transform: uppercase;
+}
+
+@mixin FeaturesText {
+    font: {
+        size: 18px;
+        weight: 400;
+    }
+    height: 84px;
+    color: #6C7279;
+    text-align: center;
+    font-family:'Raleway' , sans-serif;
+
+}
+
+@mixin Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin FlexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin FlexColumn {
+    display: flex;
+    flex-direction: column;
+}

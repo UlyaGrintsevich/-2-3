@@ -1,0 +1,213 @@
+header {
+    margin: 0 auto;
+    width: 1510px;
+    height: 747px;
+    background-image: url(../img/img2.png), url(../img/img.png);
+    position: relative;
+    font-family: 'Raleway' , sans-serif;
+
+    img[alt="logo"] {
+        margin-left: 170px;
+    }
+
+    div {
+        @include FlexBetween();
+        height: 100.95px;
+        color: $white;
+    }
+
+    nav {
+        @include Flex();
+        height: 28px;
+        margin: 36px 170px 0px 0px;
+        text-align: $center;
+    }
+
+    a {
+        @include Flex();
+        height: 100.95px;
+        width: 134px;
+        color: $white;
+        text-decoration: $none;
+        text-transform: $uppercase;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    a:hover {
+        border-bottom: 3px solid $lightgrey;
+    }
+
+    a:active {
+        color: $red;
+        border-bottom: 3px solid $red;
+    }
+
+    .header__separator {
+        border-top: 1px solid $lightgrey;
+        width: 1170px;
+        margin: 0 auto;
+        height: 0;
+    }
+
+    h1 {
+        margin: 131px auto 31.43px;
+        height: 150px;
+        width: 1170px;
+        text-transform: $uppercase;
+        line-height: 75.14px;
+        font-weight: 900;
+        text-align: $center;
+        color: $white;
+        font-size: 64px;
+    }
+
+    .header__text {
+        width: 1170px;
+        margin: 0 auto;
+        height: 56px;
+        font-weight: 400;
+        text-align: $center;
+        color: $white;
+        font-size: 24px;
+        line-height: 28.18px;
+        margin-top: 31.43px;
+    }
+
+    .header__button {
+        height: 80px;
+        width: 370px;
+        font-weight: 900;
+        text-align: $center;
+        color: $white;
+        background-color: $lightred;
+        font-size: 24px;
+        line-height: 28px;
+        border: $none;
+        margin: 79.57px 570px 0 571px;
+        text-transform: $uppercase;
+    }
+
+    button:hover {
+        background-color: $red;
+    }
+
+    button:active {
+        background-color: $lightred;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+      
+        margin: 0 auto;
+        width: 1024px;
+        height: 768px;
+        background-image: url(../img/img3.png), url(../img/img2laptop.png);
+
+        img[alt="logo"] {
+            margin-left: 20px;
+            width: 231px;
+            height: 100px;
+        }
+        div {
+            height: 100px;
+        }
+        nav { 
+            margin-right: 20px;
+        }
+
+        a {
+            height: 100px;
+            width: 112px;
+            font-size: 12px;
+        }
+
+        .header__separator {
+            border: 0.5px solid $lightgrey;
+            width: 984px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin: 157px auto 61.86px;
+            height: 112px;
+            width: 984px;
+            line-height: 56.35px;
+            font-size: 48px;
+        }
+
+        .header__text {
+            width: 984px;
+            display: $block;
+            white-space: pre-line;
+            height: 42px;
+            font-size: 18px;
+            line-height: 21.13px;
+            margin-top: 61.86px;
+        }
+
+        .header__button {
+            height: 77.58px;
+            width: 313.15px;
+            line-height: 28.18px;
+            margin: 89.14px 355px 0px 355.85px;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    header {
+        height: 56.28px;
+        margin: 0 auto;
+        width: 320px;
+        height: 574px;
+        background-image: url(../img/img2.png), url(../img/img4.png);
+
+        h1 {
+            margin: 49.72px auto 32.71px;
+            height: 210px;
+            width: 280px;
+            line-height: 42.26px;
+            font-size: 36px;
+        }
+
+        img[alt="logo"] {
+            margin-left: 20px;
+            width: 130px;
+            height: 56.28px;
+        }
+
+        div {
+            height: 56.28px;
+        }
+
+        nav {
+            display: $none;
+        }
+
+        a {
+            display: $none;
+        }
+
+        .header__separator {
+            display: $none;
+        }
+
+        .header__text {
+            width: 280px;
+            margin: 32.71 auto 0;
+            height: 64px;
+            font-size: 14px;
+            line-height: 16.44px;
+            white-space: pre-line;
+        }
+
+        .header__button {
+            height: 60px;
+            width: 280px;
+            line-height: 28.18px;
+            margin: 51.1px 20px 0px 20px;
+        }
+    }
+}

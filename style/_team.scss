@@ -1,0 +1,194 @@
+.team-container {
+    @include Flex();
+    width: 1510px;
+    height: 847px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    .team-subcontainer {
+        width: 1170px;
+        box-sizing: border-box;
+    }
+    .team-subcontainer__persons {
+        height: 619px;
+        @include FlexBetween();
+    }
+
+    .team-subcontainer__persons-card {
+        width: 270px;
+        height: 619px;
+    }
+
+    .social-network {
+       @include Flex();
+        width: 128px;
+        height: 39px;
+    }
+
+    img {
+        display: $block;
+        margin: 0 auto;
+    }
+
+    img[alt="mobile"] {
+        display: $none;
+    }
+
+    .title {
+        height: 30px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: 5.29px;
+        color: $grey;
+    }
+
+    .subtitle {
+        height: 21px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        text-transform: $uppercase;
+        margin-bottom: 17.86px;
+        color: $lightred;
+    }
+
+    .text {
+        height: 168px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #6C7279;
+        margin-bottom: 37.86px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .team-container {
+        width: 1024px;
+        height: 677.67px;
+
+        .team-subcontainer {
+            width: 984.08px;
+            box-sizing: border-box;
+        }
+
+        .team-subcontainer__persons {
+            height: 520.59px;
+        }
+
+        .team-subcontainer__persons article {
+            width: 227.08px;
+            height: 520.59px;
+        }
+
+        img[alt="dekstop"] {
+            width: 227.08px;
+            height: 227.08px;
+            margin: 0;
+        }
+
+        .social-network {
+            width: 107.66px;
+            height: 32.8px;
+        }
+
+        img[alt="mobile"] {
+            display: $none;
+        }
+
+        img[alt="facebook"],
+        img[alt="twitter"],
+        img[alt="linkedin"] {
+            width: 32.8px;
+            height: 32.8px;
+        }
+
+        .title {
+            height: 25.23px;
+            font-size: 18px;
+            line-height: 21.13px;
+            margin-top: 25.23px;
+            margin-bottom: 4.6px;
+        }
+
+        .subtitle {
+            height: 16px;
+            font-size: 14px;
+            line-height: 16.44px;
+            margin-bottom: 22.44px;
+        }
+
+        .text {
+            height: 128px;
+            font-size: 14px;
+            line-height: 16.44px;
+            margin-bottom: 39.2px;
+
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .team-container {
+        width: 320px;
+        height: 2328px;
+        margin: 0 auto;
+        .team-subcontainer {
+            height: 2252px;
+            box-sizing: border-box;
+        }
+
+        .team-subcontainer__persons {
+            @include FlexColumn();
+            height: 521px;
+        }
+
+        img[alt="dekstop"] {
+            display: $none;
+        }
+
+        img[alt="mobile"] {
+            display: $block;
+        }
+
+        .team-subcontainer__persons-card {
+            width: 280px;
+            height: 521px;
+            margin: 0 auto 56px;
+        }
+
+        .social-network {
+            width: 130px;
+            height: 39.61px;
+        }
+
+        img[alt="facebook"],
+        img[alt="twitter"],
+        img[alt="linkedin"] {
+            width: 39.61px;
+            height: 39.61px;
+            margin-bottom: 49.39px;
+        }
+
+        .title {
+            font-size: 18px;
+            height: 25.25px;
+            margin-top: 25.25px;
+            margin-bottom: 4.61px;
+        }
+
+        .subtitle {
+            margin-bottom: 38.49px;
+            font-size: 14px;
+        }
+
+        .text {
+            height: 96px;
+            margin-bottom: 55.15px;
+            line-height: 16px;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,287 @@
+footer {
+    @include Flex();
+    flex-direction: column;
+    height: 340px;
+    width: $width;
+    margin: 0 auto;
+    background: #353C65;
+    font-family: 'Raleway' , sans-serif;
+
+    .information {
+        width: 1170px;
+        height: 112.71px;
+        @include FlexBetween();
+        margin: 71.14px 170px 67.14px 171px;
+    }
+    .location {
+        width: 370px;
+        height: 71px;
+        color: $white;
+    }
+
+    .location__title,
+    .social__title,
+    .about__title {
+        color: $white;
+        height: 21px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: $center;
+        line-height: 21.13px;
+        text-transform: $uppercase;
+    }
+
+    .information .location__title {
+        margin-bottom: 29px;
+    }
+
+    .social__title {
+        margin-bottom: 48.86px;
+    }
+
+    .about__title {
+        margin-bottom: 28.71px;
+    }
+
+    .location__subtitle {
+        color: $white;
+        height: 21px;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: $center;
+        line-height: 21.13px;
+    }
+
+    .social {
+        width: 370px;
+        height: 108.86px;
+        color: $white;
+    }
+
+    .icons {
+        width: 170px;
+        @include FlexBetween();
+        margin: 0 auto;
+    }
+
+    .about {
+        width: 370px;
+        height: 112.71px;
+        color: $white;
+
+    }
+
+    .about__subtitle {
+        color: $white;
+        height: 63px;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: $center;
+        line-height: 21.13px;
+    }
+
+    .copyright {
+        height: 90px;
+        width: 100%;
+        background: #2C3154;
+    }
+
+    h5 {
+        color: #808080;
+        text-align: $center;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 24.14px;
+        margin-top: 23.86px;
+    }
+
+    span {
+        color: $white;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        width: 1024px;
+        height: 229.33px;
+        margin: 0 auto;
+        background: #353C65;
+
+        .information {
+            color: $white;
+            width: 984px;
+            height: 169.3px;
+            margin: 46.59px 20px 41.19px 20px;
+        }
+
+
+        .location {
+            width: 315px;
+            height: 49.72px;
+            color: $white;
+        }
+
+        .location__title,
+        .social__title,
+        .about__title {
+            height: 16px;
+            font-size: 14px;
+            line-height: 16.44px;
+            color: $white;
+
+        }
+
+        .location__title {
+            margin-bottom: 17.72px;
+        }
+
+        .social__title {
+            margin-bottom: 32.51px;
+        }
+
+        .about__title {
+            margin-bottom: 15.58px;
+        }
+
+        .location__subtitle {
+            height: 16px;
+            font-size: 14px;
+            line-height: 16.44px;
+        }
+
+        .social {
+            color: $white;
+            width: 314px;
+            height: 81.51px;
+
+        }
+
+        .icons {
+            width: 144.17px;
+
+        }
+
+        img[alt="social"] {
+            width: 33px;
+            height: 33px;
+        }
+
+        .about {
+            color: $white;
+            width: 315px;
+            height: 79.58px;
+
+        }
+
+        .about__subtitle {
+            color: $white;
+            height: 16px;
+            font-size: 14px;
+
+            line-height: 16.44px;
+        }
+
+        .copyright {
+            height: 60.7px;
+            width: 100%;
+            background: #2C3154;
+        }
+
+        h5 {
+            height: 32px;
+            font-size: 14px;
+            margin-bottom: 14.43px;
+            margin-top: 14.28px;
+        }
+
+      
+    }
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    footer {
+        width: 320px;
+        height: 540px;
+        margin: 0 auto;
+        background: #353C65;
+
+        .information {
+
+            width: 280px;
+            height: 415.85px;
+            margin: 34.14px auto 33.14px;
+            @include FlexColumn();
+        }
+
+        .location__subtitle {
+            height: 21px;
+            font-size: 14px;
+            line-height: 16.44px;
+        }
+
+        .location {
+            width: 280px;
+            height: 66px;
+        }
+
+
+
+        .location__title {
+            margin-bottom: 34px;
+        }
+
+        .social__title {
+            margin-bottom: 36.71px;
+        }
+
+       
+        .location__title,
+        .social__title,
+        .about__title {
+            height: 16px;
+            font-size: 14px;
+            line-height: 16.44px;
+            color: $white;
+
+        }
+        .social {
+            width: 279px;
+            height: 85.71px;
+
+        }
+
+        .about {
+            width: 279px;
+            height: 102.71px;
+    
+        }
+
+        .about__subtitle {
+            height: 48px;
+            font-size: 14px;
+            line-height: 16.44px;
+            margin-bottom: 33.14px;
+        }
+
+        .copyright {
+            height: 90px;
+            width: 320px;
+            background: #2C3154;
+        }
+
+        h5 {
+            height: 32px;
+            font-size: 14px;
+            margin-bottom: 28.14px;
+            margin-top: 29.86px;
+        }
+
+    
+    }
+
+
+}

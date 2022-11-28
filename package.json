@@ -1,0 +1,20 @@
+{
+  "name": "diploma",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+
+  "repository": {
+    "type": "git",
+    "url": "UlyaGrintsevich"
+  },
+  "author": "Ulyana",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.8.0",
+    "sass": "^1.56.1"
+  },
+  "scripts": {
+    "watch": "parcel index.html --open --port 3000"
+  }
+}

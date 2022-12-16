@@ -1,0 +1,95 @@
+.registration-container {
+    @include Flex();
+    width: $width;
+    height: 949px;
+    background-image: url(../img/fon1.jpg);
+    font-weight: 'Raleway', sans-serif;
+    
+    .registration{
+        // margin-top: 125px;
+        height: 500px;
+        width: 700px;
+        border-radius: 15px;
+        background-color: #c1d9e0f7;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       
+    }
+   .all {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   }
+    .form-control {
+       margin: 10px auto;
+
+        background-color: #E6E6FA;
+        border: none;
+        width: 300px;
+        height: 40px;
+    }
+    input::placeholder {
+        color: #000000;
+        font-family: 'Jost' , sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        
+    }
+    button {
+        width: 200px;
+        height: 35px;
+       margin: 15px 250px 15px 250px;
+        font-family: 'Jost' , sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    p {
+        width: 382px;
+        @include Flex();
+        height: 100px;
+        font-family: 'PT Serif' , sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase; 
+        color: black;
+        margin: 0 auto;
+        // margin-top: 15px;
+    }
+}
+
+// <main id="autorization" class="autorization-container" background-color="black" color="#FFFFFF" text-align="center">
+// 		<p style="font-family: Source Sans Pro;
+// 		font-style: normal;
+// 		font-weight: bold;
+// 		font-size: 72px;"><u>Authorization:</u></p>
+// 		<div class="Container" style="font-family: Source Sans Pro;
+// 		font-size: 48px;">
+// 		<form name="form" action="" method="">
+// 		<p>login:
+// 		<input name="login" autocomplete="off" id="login" type="text" style="width:400px; height:25px; background:#000000; border: 2px solid #FFFFFF; color:#FFFFFF" value="">
+// 		</p><p>password:
+// 		<input name="password" type="password" style="width:400px; height:25px; background:#000000; border: 2px solid #FFFFFF; color:#FFFFFF" value="">
+// 		</p></div></div></table>
+// 		<input type="submit" value="Отправить" style="cursor:pointer; margin-top:10px; width:200px; height:35px; font:24px; background:#000000; border: 2px solid #FFFFFF; color:#FFFFFF">
+// 		<p id="pls" hidden="true" style="color: red">Пользовтель с таким логином уже существует</p>
+// 		<div id="help" hidden="true" style="color: red">
+// 		<p>Ошибка!</p>
+// 		<p>Код ошибки: NTPCesar538</p>
+// 		</div>
+// 		</form>
+// 	  </body>
+	
+// 	  <script>
+// 		var form = document.forms[0];
+// 		form.addEventListener('submit', login);
+// 		function login(event) {
+// 		event.preventDefault();
+// 		var login = form.login;  
+// 		if (login.value=="Cesar5"&&form.password.value=="Hjxfw10"){
+// 		document.getElementById('pls').hidden=true;
+// 		document.getElementById('help').hidden=false;
+// 		}
+// 		else { document.getElementById('pls').hidden=false;
+// 		document.getElementById('help').hidden=true;}
+// 		}
+// 	  </script>

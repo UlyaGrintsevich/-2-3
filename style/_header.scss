@@ -1,13 +1,18 @@
 header {
     margin: 0 auto;
     width: 1510px;
-    height: 747px;
-    background-image: url(../img/img2.png), url(../img/img.png);
+    height: 767px;
+    background-image: url(../img/img2.png), url(../img/fon1.jpg);
     position: relative;
-    font-family: 'Raleway' , sans-serif;
-
-    img[alt="logo"] {
-        margin-left: 170px;
+    font-family: 'Raleway', sans-serif;
+    .text {
+        width:750px;
+        font-family: 'Jost' , sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        @include Flex();
+        margin-left: 120px;
+        
     }
 
     div {
@@ -19,7 +24,7 @@ header {
     nav {
         @include Flex();
         height: 28px;
-        margin: 36px 170px 0px 0px;
+        margin: 36px 120px 0px 0px;
         text-align: $center;
     }
 
@@ -35,71 +40,42 @@ header {
     }
 
     a:hover {
-        border-bottom: 3px solid $lightgrey;
+        border-bottom: 3px solid black;
     }
 
     a:active {
-        color: $red;
-        border-bottom: 3px solid $red;
+        color: black;
+        border-bottom: 3px solid black;
     }
 
     .header__separator {
         border-top: 1px solid $lightgrey;
-        width: 1170px;
+        width: 1270px;
         margin: 0 auto;
         height: 0;
     }
 
-    h1 {
-        margin: 131px auto 31.43px;
-        height: 150px;
-        width: 1170px;
-        text-transform: $uppercase;
-        line-height: 75.14px;
-        font-weight: 900;
-        text-align: $center;
-        color: $white;
-        font-size: 64px;
+    .mobile-container {
+        width: 1510px;
+        height: 767px;
+        @include Flex ();
+        display: grid;
+        grid-template-columns: repeat(2 , 550px);
+        grid-template-rows: repeat(3 , 220px);
+        align-self: center;
+        justify-items: center;
+
+    }
+    
+    .phone{
+        font-size: 16px;
     }
 
-    .header__text {
-        width: 1170px;
-        margin: 0 auto;
-        height: 56px;
-        font-weight: 400;
-        text-align: $center;
-        color: $white;
-        font-size: 24px;
-        line-height: 28.18px;
-        margin-top: 31.43px;
-    }
-
-    .header__button {
-        height: 80px;
-        width: 370px;
-        font-weight: 900;
-        text-align: $center;
-        color: $white;
-        background-color: $lightred;
-        font-size: 24px;
-        line-height: 28px;
-        border: $none;
-        margin: 79.57px 570px 0 571px;
-        text-transform: $uppercase;
-    }
-
-    button:hover {
-        background-color: $red;
-    }
-
-    button:active {
-        background-color: $lightred;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     header {
-      
+
         margin: 0 auto;
         width: 1024px;
         height: 768px;
@@ -110,10 +86,12 @@ header {
             width: 231px;
             height: 100px;
         }
+
         div {
             height: 100px;
         }
-        nav { 
+
+        nav {
             margin-right: 20px;
         }
 
